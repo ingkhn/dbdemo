@@ -17,7 +17,7 @@ ORDER BY count(student_id) DESC
 LIMIT 2;
 
 
-// список студентов на каждом курсе
+// список студентов на каждом курсе (left join - плюс выведет курсы без студентов)
 select title, last_name, first_name
 from Course as c
 join Student as s on c.course_id = s.course_id
