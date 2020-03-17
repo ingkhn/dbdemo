@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping
+@RequestMapping("/api")
 @AllArgsConstructor
 public class StudentController {
 
@@ -21,10 +21,10 @@ public class StudentController {
         return studentService.findAll();
     }
 
-    @GetMapping("/students/{student_id}")
-    public Student getStudentById(@PathVariable int student_id) {
-        return studentService.findAllById(student_id);
-    }
+//    @GetMapping("/students/{student_id}")
+//    public Student getStudentById(@PathVariable int student_id) {
+//        return studentService.findAllById(student_id);
+//    }
 
     @PostMapping("/students")
     public void addStudent(@RequestBody Student student) {

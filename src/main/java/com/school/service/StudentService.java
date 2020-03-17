@@ -11,7 +11,7 @@ public interface StudentService {
 
     List<Student> findAll();
 
-    Student findAllById(int id);
+  //  Student findAllById(int id);
 
     void save(Student student);
 

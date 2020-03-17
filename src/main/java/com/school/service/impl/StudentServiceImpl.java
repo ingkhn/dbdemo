@@ -22,9 +22,9 @@ public class StudentServiceImpl implements StudentService {
         return studentRepository.findAll();
     }
 
-    @Override
+/*    @Override
     public Student findAllById(int id) {
-        Optional<Student> result = studentRepository.findAllById(id);
+        Optional<Student> result = studentRepository.findAllById();
 
         Student student = null;
         if(result.isPresent())
@@ -33,7 +33,7 @@ public class StudentServiceImpl implements StudentService {
             throw new RuntimeException("Did not find student id: " + id);
 
         return student;
-    }
+    }*/
 
     @Override
     public void save(Student student) {
